@@ -8,7 +8,7 @@ class JumioMobileSDK {
 
   static Future<void> initNetverify(String apiToken, String apiSecret,
       String dataCenter, Map<String, dynamic> options,
-      [Map<String, dynamic> customization]) async {
+      [Map<String, dynamic>? customization]) async {
     await _channel.invokeMethod('initNetverify', {
       'apiToken': apiToken,
       'apiSecret': apiSecret,
@@ -24,7 +24,7 @@ class JumioMobileSDK {
 
   static Future<void> initDocumentVerification(String apiToken,
       String apiSecret, String dataCenter, Map<String, dynamic> options,
-      [Map<String, dynamic> customization]) async {
+      [Map<String, dynamic>? customization]) async {
     await _channel.invokeMethod('initDocumentVerification', {
       'apiToken': apiToken,
       'apiSecret': apiSecret,
@@ -40,7 +40,7 @@ class JumioMobileSDK {
 
   static Future<void> initBAM(String apiToken, String apiSecret,
       String dataCenter, Map<String, dynamic> options,
-      [Map<String, dynamic> customization]) async {
+      [Map<String, dynamic>? customization]) async {
     await _channel.invokeMethod('initBAM', {
       'apiToken': apiToken,
       'apiSecret': apiSecret,
